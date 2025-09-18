@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Selector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <img src="clock_logo.png" alt="logo" class="logo-img" />
+
+      <!-- Wake up -->
+      <div class="time-item">
+        <label for="wakeUpTime" class="item-label">
+          <img src="wake_up (1).svg" alt="Wake Up" />
+          Set wake up time
+        </label>
+        <select id="wakeUpTime" class="time-select"></select>
+      </div>
+
+      <!-- Lunch -->
+      <div class="time-item">
+        <label for="lunchTime" class="item-label">
+          <img src="lunch_time (1).svg" alt="Lunch" />
+          Set lunch time
+        </label>
+        <select id="lunchTime" class="time-select"></select>
+      </div>
+
+      <!-- Nap -->
+      <div class="time-item">
+        <label for="napTime" class="item-label">
+          <img src="nap_time (1).svg" alt="Nap" />
+          Set nap time
+        </label>
+        <select id="napTime" class="time-select"></select>
+      </div>
+
+      <!-- Night -->
+      <div class="time-item">
+        <label for="nightTime" class="item-label">
+          <img src="nap_time (1).svg" alt="Night" />
+          Set night time
+        </label>
+        <select id="nightTime" class="time-select"></select>
+      </div>
+
+      <!-- Greeting -->
+      <h1 class="greeting-text">GOOD MORNING!! WAKE UP!!</h1>
+
+      <!-- Set Alarm Button -->
+      <button id="setAlarmBtn" class="alarm-btn">Set Alarm!!</button>
+
+      <!-- Alarm Result Display -->
+      <div id="alarmResult" class="alarm-result"></div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+      <!-- Clock -->
+      <div class="clock-card">
+        <div class="clock-header">
+          <span class="clock-title">Time</span>
+        </div>
+
+        <div class="time-grid">
+          <!-- Hours -->
+          <div class="time-box">
+            <span id="hours-display" class="time-value"></span>
+            <span class="time-label">Hours</span>
+          </div>
+          <span class="time-sep">:</span>
+
+          <!-- Minutes -->
+          <div class="time-box">
+            <span id="minutes-display" class="time-value"></span>
+            <span class="time-label">Mins</span>
+          </div>
+          <span class="time-sep">:</span>
+
+          <!-- Seconds -->
+          <div class="time-box">
+            <span id="seconds-display" class="time-value"></span>
+            <span class="time-label">Secs</span>
+          </div>
+          <span class="time-sep">:</span>
+
+          <!-- AM/PM -->
+          <div class="ampm-box" onclick="toggleAmPm()">
+            <span id="ampm-display" class="ampm-value"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message -->
+      <h2 class="meal-msg">GRAB SOME HEALTHY BREAKFAST!!!</h2>
+
+      <!-- Illustration -->
+      <img src="component.svg" alt="Illustration" class="illustration" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
